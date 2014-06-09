@@ -48,7 +48,7 @@
 					print_r($statement->errorInfo());
 			}
 		}
-		echo "\"Ämnen\"";
+		echo "Ämnen";
 		foreach($pdo->query("SELECT * FROM subjects ORDER BY name") as $row){	
 			echo "<ul><p>{$row['name']}</p></ul>";
 		}
